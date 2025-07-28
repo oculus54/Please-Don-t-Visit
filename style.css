@@ -1,0 +1,96 @@
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.na {
+    text-align: center;
+    height: 80px; /* ⬅️ shorter height */
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 40px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: pink;
+    background-color: rgba(221, 160, 221, 0.3); /* translucent plum */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    padding: 20px;
+    animation: fadeSlideIn 1s ease-out;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+body {
+    background-image: url("nhn.jpg");
+    background-position: center;   
+    height: 500px;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    
+}
+
+@keyframes fadeSlideInMain {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    width: 600px;
+    height: 200px; /* ⬅️ Short height */
+    margin: 80px auto 0 auto; /* Centered horizontally */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeSlideInMain 1s ease-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* In case text is longer than height */
+
+}
+    .fancy-button {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .fancy-button.clicked {
+      background-color: #FF5733;
+      transform: scale(1.1);
+      box-shadow: 0 0 10px #FF5733;
+    }
+
+.image-container img {
+  width: 300px;       /* ✅ Fixed smaller width */
+  height: auto;
+  border-radius: 12px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+.image-container {
+  margin-top: 30px;
+  text-align: center;
+}
